@@ -36,3 +36,4 @@ Welcome to my **Personal portfolio website** – a dynamic, responsive, and visu
 | `JavaScript`| Interactivity and dynamics  |
 
 ---
+
