@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Naman logo.png">
+
+    <meta property="og:description"
+        content="Explore Naman's personal portfolio — showcasing innovative web projects, design skills, and creative solutions in frontend and full-stack development." />
+    <meta name="creator" content="Naman" />
+    <meta name="publisher" content="Naman Raj" />
+    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Naman's Portfolio | Web Developer & Designer" />
+    <meta property="og:description"
+        content="Explore Naman's personal portfolio — showcasing innovative web projects, design skills, and creative solutions in frontend and full-stack development." />
+    <meta property="og:type" content="website" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scroll-indicator"></div>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
+
+        <header id="header">
+            <div class="left">
+                <img src="images/Naman logo.png" alt="Naman's Logo">
+                <h2>The Naman<span>Verse</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/pro_n.r_/" target="_blank" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://github.com/Naman11612" target="_blank" aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/naman-raj-06b203361/" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </div>
+        </header>
+
+        <div class="mobile-nav" id="mobileNav">
+            <div class="close-menu" id="closeMenu">
+                <i class='bx bx-x'></i>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <section class="hero" id="home">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class='bx bx-code-alt'></i>
+                    Front-end Developer Portfolio
+                </div>
+                <h1>Crafting <span class="gradient-text">Digital</span><br>Experiences with <span
+                        class="gradient-text">Passion</span></h1>
+                <p>I'm a passionate front-end developer with 4+ years of experience creating beautiful, responsive, and
+                    user-friendly web applications. Let's build something amazing together.</p>
+                <a href="#contact" class="cta-button">
+                    <i class='bx bx-send'></i>
+                    Get In Touch
+                </a>
+            </div>
+            <div class="hero-photo-frame">
+                <div class="photo-container">
+                    <img src="images/naman(potrait).jpg" alt="Naman's Portrait" class="hero-photo">
+                </div>
+            </div>
+        </section>
+
+       <!-- Enhanced About Section -->
+<section class="section about-section fade-in" id="about">
+    <h2 class="section-title">About Me <span>👋</span></h2>
+    <div class="about-content">
+        <div class="about-avatar">
+            <img src="images/naman(potrait).jpg" alt="Naman's Portrait" />
+            <div class="about-badge">4+ Years Experience</div>
+        </div>
+        <div class="about-details">
+            <div class="about-tabs">
+                <button class="about-tab active" data-tab="bio">Bio</button>
+                <button class="about-tab" data-tab="tech">Tech Stack</button>
+                <button class="about-tab" data-tab="values">Values</button>
+            </div>
+            <div class="about-panels">
+                <div class="about-panel active" id="bio">
+                    <h3>Hello, I'm Naman</h3>
+                    <p>
+                        I'm a passionate front-end developer from Jharkhand, India, with 4+ years of experience building beautiful, responsive, and user-friendly web applications. I love turning ideas into reality through code and design, and I'm always eager to learn and grow.
+                    </p>
+                </div>
+                <div class="about-panel" id="tech">
+                    <h3>Tech Stack</h3>
+                    <ul class="about-tech-list">
+                        <li><i class='bx bxl-html5'></i> HTML5</li>
+                        <li><i class='bx bxl-css3'></i> CSS3</li>
+                        <li><i class='bx bxl-javascript'></i> JavaScript</li>
+                        <li><i class='bx bxl-react'></i> React</li>
+                        <li><i class='bx bxl-nodejs'></i> Node.js</li>
+                        <li><i class='bx bxl-git'></i> Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="about-panel" id="values">
+                    <h3>My Values</h3>
+                    <ul class="about-values-list">
+                        <li>✨ Clean, maintainable code</li>
+                        <li>🤝 Collaboration & communication</li>
+                        <li>🚀 Continuous learning</li>
+                        <li>🌏 Global mindset</li>
+                        <li>🎨 Creativity & innovation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-actions">
+                <a href="#skills" class="cta-button"><i class='bx bx-bolt'></i> See My Skills</a>
+                <a href="#projects" class="cta-button"><i class='bx bx-rocket'></i> View Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="section fade-in" id="projects">
+            <h2 class="section-title">Featured Projects 🚀</h2>
+
+            <!-- Project no 1 -->
+            <div class="project-showcase">
+                <div class="project-media">
+                    <video loop muted playsinline autoplay>
+                        <source src="videos/Portfolio website .mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-info">
+                    <h3>Modern <span class="gradient-text">Portfolio Website</span></h3>
+                    <p>A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. Features smooth
+                        animations, a dark theme, and a clean, professional layout.</p>
+                    <a href="https://github.com/Naman11612/portfolio" target="_blank" class="cta-button">
+                        <i class='bx bxl-github'></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- project no 2  -->
+            <div class="project-showcase">
+                <div class="project-media">
+                    <video loop muted autoplay playsinline>
+                        <source src="videos/website.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="project-info">
+                    <h3>Professional <span class="gradient-text">Coaching Website</span></h3>
+                    <p>
+                        A interactive website designed for a professional coaching <strong>"UG Sharma Classes"</strong>.
+                        This project
+                        features a modern UI, testimonials carousel, and a blog section
+                        for sharing insights. Built with HTML5, CSS3, and JavaScript, it ensures a seamless
+                        experience for both coaches and clients across all devices.
+                    </p>
+                    <a href="https://github.com/Naman11612/coaching-website" target="_blank" class="cta-button">
+                        <i class='bx bxl-github'></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Add more .project-showcase blocks for more projects -->
+        </section>
+
+        <section class="skills-section" id="skills">
+            <h1 class="section-title autoDisplay">
+                Skills & Tools 🛠️
+            </h1>
+            <div class="skills-box autoDisplay">
+                <img class="skills-image" src="images/digital brain (2).png" alt="">
+                <div class="Designer">
+                    <h1 class="gradient">Designer <i class='bx bx-laptop'></i></h1>
+                    <p>I have expertise in HTML, CSS, JavaScript, and design tools like Figma and Adobe XD. My strength
+                        lies in blending aesthetics with functionality to create seamless user experiences.</p>
+                </div>
+
+                <div class="coder">
+                    <h1 class="gradient">Coder <i class='bx bx-code-block'></i></h1>
+                    <p>I’m skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js. I also have
+                        experience with database management using MongoDB and MySQL</p>
+                </div>
+
+                <div class="slider" reverse="true" style="
+                --width: 100px;
+                --height: 100px;
+                --quantity: 9;
+                ">
+                    <div class="list">
+                        <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="images/3.webp" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="images/4.webp" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section fade-in" id="contact">
+            <h2 class="section-title">Contact Me 📬</h2>
+            <form class="contact-box" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">
+                    <i class='bx bx-send'></i> Send Message
+                </button>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="images/Naman logo.png" alt="Naman's Logo">
+                            <h3>The Naman<span>Verse</span></h3>
+                        </div>
+                        <p>Building beautiful, performant web experiences. Let's connect and create something amazing
+                            together!</p>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/pro_n.r_/" target="_blank" aria-label="Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="https://github.com/Naman11612" target="_blank" aria-label="GitHub">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/naman-raj-06b203361/" target="_blank"
+                                aria-label="LinkedIn">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Projects</h4>
+                        <ul>
+                            <li><a href="#projects">Portfolio Website</a></li>
+                            <li><a href="#projects">Coaching Website</a></li>
+                            <!-- Add more project links as needed -->
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:namanraj11612@gmail.com">Email</a></li>
+                            <li><a href="https://www.instagram.com/pro_n.r_/" target="_blank">Instagram</a></li>
+                            <li><a href="https://github.com/Naman11612" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/naman-raj-06b203361/" target="_blank">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Naman Raj. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Scroll Indicator
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        window.addEventListener('scroll', () => {
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const percentage = (window.scrollY / maxHeight) * 100;
+            scrollIndicator.style.width = percentage + "%";
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const closeMenu = document.getElementById('closeMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+        });
+
+        // Header shrink on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
+
+        // Fade-in elements on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+
+    <script>
+        //This is for about section
+document.querySelectorAll('.about-tab').forEach(tab => {
+    tab.addEventListener('click', function () {
+        // Remove active from all tabs and panels
+        document.querySelectorAll('.about-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.about-panel').forEach(p => p.classList.remove('active'));
+        // Add active to clicked tab and corresponding panel
+        this.classList.add('active');
+        document.getElementById(this.dataset.tab).classList.add('active');
+    });
+});
+</script>
+</body>
+
+</html>
