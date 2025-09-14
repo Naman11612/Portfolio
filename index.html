@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naman | Portfolio</title>
     <link rel="icon" type="image/png" href="images/Naman logo.png">
-
     <meta property="og:description"
         content="Explore Naman's personal portfolio — showcasing innovative web projects, design skills, and creative solutions in frontend and full-stack development." />
     <meta name="creator" content="Naman" />
@@ -17,6 +16,7 @@
     <meta property="og:description"
         content="Explore Naman's personal portfolio — showcasing innovative web projects, design skills, and creative solutions in frontend and full-stack development." />
     <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
@@ -99,56 +99,58 @@
             </div>
         </section>
 
-       <!-- Enhanced About Section -->
-<section class="section about-section fade-in" id="about">
-    <h2 class="section-title">About Me <span>👋</span></h2>
-    <div class="about-content">
-        <div class="about-avatar">
-            <img src="images/naman(potrait).jpg" alt="Naman's Portrait" />
-            <div class="about-badge">4+ Years Experience</div>
-        </div>
-        <div class="about-details">
-            <div class="about-tabs">
-                <button class="about-tab active" data-tab="bio">Bio</button>
-                <button class="about-tab" data-tab="tech">Tech Stack</button>
-                <button class="about-tab" data-tab="values">Values</button>
-            </div>
-            <div class="about-panels">
-                <div class="about-panel active" id="bio">
-                    <h3>Hello, I'm Naman</h3>
-                    <p>
-                        I'm a passionate front-end developer from Jharkhand, India, with 4+ years of experience building beautiful, responsive, and user-friendly web applications. I love turning ideas into reality through code and design, and I'm always eager to learn and grow.
-                    </p>
+        <!-- About Section -->
+        <section class="section about-section fade-in" id="about">
+            <h2 class="section-title">About Me <span>👋</span></h2>
+            <div class="about-content">
+                <div class="about-avatar">
+                    <img src="images/naman(potrait).jpg" alt="Naman's Portrait" />
+                    <div class="about-badge">4+ Years Experience</div>
                 </div>
-                <div class="about-panel" id="tech">
-                    <h3>Tech Stack</h3>
-                    <ul class="about-tech-list">
-                        <li><i class='bx bxl-html5'></i> HTML5</li>
-                        <li><i class='bx bxl-css3'></i> CSS3</li>
-                        <li><i class='bx bxl-javascript'></i> JavaScript</li>
-                        <li><i class='bx bxl-react'></i> React</li>
-                        <li><i class='bx bxl-nodejs'></i> Node.js</li>
-                        <li><i class='bx bxl-git'></i> Git & GitHub</li>
-                    </ul>
-                </div>
-                <div class="about-panel" id="values">
-                    <h3>My Values</h3>
-                    <ul class="about-values-list">
-                        <li>✨ Clean, maintainable code</li>
-                        <li>🤝 Collaboration & communication</li>
-                        <li>🚀 Continuous learning</li>
-                        <li>🌏 Global mindset</li>
-                        <li>🎨 Creativity & innovation</li>
-                    </ul>
+                <div class="about-details">
+                    <div class="about-tabs">
+                        <button class="about-tab active" data-tab="bio">Bio</button>
+                        <button class="about-tab" data-tab="tech">Tech Stack</button>
+                        <button class="about-tab" data-tab="values">Values</button>
+                    </div>
+                    <div class="about-panels">
+                        <div class="about-panel active" id="bio">
+                            <h3>Hello, I'm Naman</h3>
+                            <p>
+                                I'm a passionate front-end developer from Jharkhand, India, with 4+ years of experience
+                                building beautiful, responsive, and user-friendly web applications. I love turning ideas
+                                into reality through code and design, and I'm always eager to learn and grow.
+                            </p>
+                        </div>
+                        <div class="about-panel" id="tech">
+                            <h3>Tech Stack</h3>
+                            <ul class="about-tech-list">
+                                <li><i class='bx bxl-html5'></i> HTML5</li>
+                                <li><i class='bx bxl-css3'></i> CSS3</li>
+                                <li><i class='bx bxl-javascript'></i> JavaScript</li>
+                                <li><i class='bx bxl-react'></i> React</li>
+                                <li><i class='bx bxl-nodejs'></i> Node.js</li>
+                                <li><i class='bx bxl-git'></i> Git & GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="about-panel" id="values">
+                            <h3>My Values</h3>
+                            <ul class="about-values-list">
+                                <li>✨ Clean, maintainable code</li>
+                                <li>🤝 Collaboration & communication</li>
+                                <li>🚀 Continuous learning</li>
+                                <li>🌏 Global mindset</li>
+                                <li>🎨 Creativity & innovation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <a href="#skills" class="cta-button"><i class='bx bx-bolt'></i> See My Skills</a>
+                        <a href="#projects" class="cta-button"><i class='bx bx-rocket'></i> View Projects</a>
+                    </div>
                 </div>
             </div>
-            <div class="about-actions">
-                <a href="#skills" class="cta-button"><i class='bx bx-bolt'></i> See My Skills</a>
-                <a href="#projects" class="cta-button"><i class='bx bx-rocket'></i> View Projects</a>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <section class="section fade-in" id="projects">
             <h2 class="section-title">Featured Projects 🚀</h2>
@@ -233,18 +235,56 @@
             </div>
         </section>
 
-        <section class="contact-section section fade-in" id="contact">
-            <h2 class="section-title">Contact Me 📬</h2>
-            <form class="contact-box" action="mailto:your.email@example.com" method="POST" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-button">
-                    <i class='bx bx-send'></i> Send Message
-                </button>
-            </form>
+
+        <!--Contact section-->
+        <section class="contact-section" id="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="content">
+                            <h3>Location</h3>
+                            <p>Bokaro, Jharkhand  India </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="content">
+                            <h3>Email</h3>
+                            <p>namanraj11612@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="content">
+                            <h3>Status</h3>
+                            <p>Ready For Work</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">
+                        Send Message
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
         </section>
 
+        <!--Footer Section-->
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-main">
@@ -352,17 +392,17 @@
 
     <script>
         //This is for about section
-document.querySelectorAll('.about-tab').forEach(tab => {
-    tab.addEventListener('click', function () {
-        // Remove active from all tabs and panels
-        document.querySelectorAll('.about-tab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.about-panel').forEach(p => p.classList.remove('active'));
-        // Add active to clicked tab and corresponding panel
-        this.classList.add('active');
-        document.getElementById(this.dataset.tab).classList.add('active');
-    });
-});
-</script>
+        document.querySelectorAll('.about-tab').forEach(tab => {
+            tab.addEventListener('click', function () {
+                // Remove active from all tabs and panels
+                document.querySelectorAll('.about-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.about-panel').forEach(p => p.classList.remove('active'));
+                // Add active to clicked tab and corresponding panel
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab).classList.add('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
