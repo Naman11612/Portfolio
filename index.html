@@ -29,7 +29,9 @@
 
         <header id="header">
             <div class="left">
-                <img src="images/Naman logo.png" alt="Naman's Logo">
+                <a href="index.html">
+                <img src="images/Naman logo.png" alt="Naman's Logo" >
+                 </a>
                 <h2>The Naman<span>Verse</span></h2>
             </div>
             <nav>
@@ -100,7 +102,7 @@
         </section>
 
         <!-- About Section -->
-        <section class="section about-section fade-in" id="about">
+        <section class="section about-section" id="about">
             <h2 class="section-title">About Me <span>👋</span></h2>
             <div class="about-content">
                 <div class="about-avatar">
@@ -152,7 +154,7 @@
             </div>
         </section>
 
-        <section class="section fade-in" id="projects">
+        <section class="section" id="projects">
             <h2 class="section-title">Featured Projects 🚀</h2>
 
             <!-- Project no 1 -->
@@ -368,26 +370,6 @@
         closeMenu.addEventListener('click', () => {
             mobileNav.classList.remove('active');
         });
-
-        // Header shrink on scroll
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            header.classList.toggle('scrolled', window.scrollY > 10);
-        });
-
-        // Fade-in elements on scroll
-        const fadeElements = document.querySelectorAll('.fade-in');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
-
-        fadeElements.forEach(el => observer.observe(el));
     </script>
 
     <script>

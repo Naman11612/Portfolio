@@ -76,15 +76,17 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+            margin-top: 3px;
         }
 
         .left img {
-            width: 45px;
-            height: 45px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid #6366f1;
             transition: all 0.3s ease;
+            margin-top: 5px;
         }
 
         .left img:hover {
@@ -103,6 +105,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            font-family: cursive;
+           font-size: 30px;
         }
 
         header nav ul {
@@ -122,6 +126,7 @@
             font-weight: 600;
             transition: all 0.3s ease;
             position: relative;
+            font-family: cursive;
         }
 
         header nav ul li a:hover {
