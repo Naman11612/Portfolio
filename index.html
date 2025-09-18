@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,16 +35,16 @@
         <header id="header">
             <div class="left">
                 <a href="index.html">
-                <img src="images/Naman logo.png" alt="Naman's Logo" >
-                 </a>
+                    <img src="images/Naman logo.png" alt="Naman's Logo">
+                </a>
                 <h2>The Naman<span>Verse</span></h2>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -213,7 +218,7 @@
 
                 <div class="coder">
                     <h1 class="gradient">Coder <i class='bx bx-code-block'></i></h1>
-                    <p>I’m skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js. I also have
+                    <p>I'm skilled in HTML, CSS, JavaScript, and frameworks like React and Node.js. I also have
                         experience with database management using MongoDB and MySQL</p>
                 </div>
 
@@ -247,7 +252,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="content">
                             <h3>Location</h3>
-                            <p>Bokaro, Jharkhand  India </p>
+                            <p>Bokaro, Jharkhand India </p>
                         </div>
                     </div>
 
@@ -349,7 +354,224 @@
             </div>
         </footer>
     </div>
+
     <script>
+        // Initialize GSAP with ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set up animations for each section
+            setupHeroAnimations();
+            setupAboutAnimations();
+            setupProjectAnimations();
+            setupSkillsAnimations();
+            setupContactAnimations();
+            setupFloatingElements();
+            setupNavigationHighlight();
+        });
+
+        // Hero section animations
+        function setupHeroAnimations() {
+            // Animate hero content
+            gsap.from('.hero-content > *', {
+                duration: 1,
+                y: 10,
+                opacity: 1,
+                stagger: 0.2,
+                ease: 'power3.out'
+            });
+
+            // Animate hero photo
+            gsap.from('.hero-photo-frame', {
+                duration: 1.2,
+                scale: 0.8,
+                opacity: 0,
+                rotation: -5,
+                ease: 'back.out(1.7)',
+                delay: 0.5
+            });
+        }
+
+        // About section animations
+        function setupAboutAnimations() {
+            gsap.from('.about-section .section-title', {
+                scrollTrigger: {
+                    trigger: '.about-section',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 0.8,
+                y: 30,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+
+            gsap.from('.about-avatar', {
+                scrollTrigger: {
+                    trigger: '.about-avatar',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                x: -50,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+
+            gsap.from('.about-details', {
+                scrollTrigger: {
+                    trigger: '.about-details',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                x: 50,
+                opacity: 0,
+                ease: 'power2.out',
+                delay: 0.3
+            });
+        }
+
+        // Project section animations
+        function setupProjectAnimations() {
+            // Animate each project showcase
+            gsap.utils.toArray('.project-showcase').forEach((project, i) => {
+                gsap.from(project, {
+                    scrollTrigger: {
+                        trigger: project,
+                        start: 'top 85%',
+                        toggleActions: 'play none none none'
+                    },
+                    duration: 1,
+                    y: 50,
+                    opacity: 0,
+                    ease: 'power2.out',
+                    delay: i * 0.2
+                });
+            });
+        }
+
+        // Skills section animations
+        function setupSkillsAnimations() {
+            gsap.from('.skills-section .section-title', {
+                scrollTrigger: {
+                    trigger: '.skills-section',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 0.8,
+                y: 30,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+
+            gsap.from('.Designer', {
+                scrollTrigger: {
+                    trigger: '.Designer',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                x: -50,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+
+            gsap.from('.coder', {
+                scrollTrigger: {
+                    trigger: '.coder',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                x: 50,
+                opacity: 0,
+                ease: 'power2.out',
+                delay: 0.2
+            });
+        }
+
+        // Contact section animations
+        function setupContactAnimations() {
+            gsap.from('.contact-section h2', {
+                scrollTrigger: {
+                    trigger: '.contact-section',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 0.8,
+                y: 30,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+
+            gsap.from('.contact-info', {
+                scrollTrigger: {
+                    trigger: '.contact-info',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                x: -30,
+                opacity: 0,
+                ease: 'power2.out'
+            });
+
+            gsap.from('.contact-box', {
+                scrollTrigger: {
+                    trigger: '.contact-box',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                },
+                duration: 1,
+                x: 30,
+                opacity: 0,
+                ease: 'power2.out',
+                delay: 0.2
+            });
+        }
+
+        // Floating elements animation
+        function setupFloatingElements() {
+            const floatingElements = document.querySelectorAll('.floating-element');
+
+            floatingElements.forEach((el, i) => {
+                gsap.to(el, {
+                    y: 20,
+                    duration: 2 + i,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: 'sine.inOut'
+                });
+            });
+        }
+
+        // Navigation highlight on scroll
+        function setupNavigationHighlight() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('header nav ul li a');
+
+            sections.forEach(section => {
+                ScrollTrigger.create({
+                    trigger: section,
+                    start: 'top 50%',
+                    end: 'bottom 50%',
+                    onToggle: self => {
+                        if (self.isActive) {
+                            const id = section.getAttribute('id');
+                            navLinks.forEach(link => {
+                                link.classList.remove('active');
+                                if (link.getAttribute('href') === `#${id}`) {
+                                    link.classList.add('active');
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        }
+
         // Scroll Indicator
         const scrollIndicator = document.querySelector('.scroll-indicator');
         window.addEventListener('scroll', () => {
@@ -370,9 +592,7 @@
         closeMenu.addEventListener('click', () => {
             mobileNav.classList.remove('active');
         });
-    </script>
 
-    <script>
         //This is for about section
         document.querySelectorAll('.about-tab').forEach(tab => {
             tab.addEventListener('click', function () {
